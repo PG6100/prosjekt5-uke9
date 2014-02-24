@@ -3,6 +3,8 @@ prosjekt5-uke9
 
 Denne øvingen handler om å få litt innsikt i transaksjon api-et til JEE. Importer prosjektet som Maven prosjekt til IDEA (husk Auto-import flagget ved importering, ref oppslag på Its Learning). For gradle, bruk `gradle idea` kommando som genererer `IDEA` filene.
 
+Bruk `F4_Transaksjon` foiler som hjelpemidler.
+
 Fra prosjektets mappe bør man gjøre følgende (set riktig `JAVA_HOME` og `DERBY_HOME`).
 
 Start Derby[1] (ignorer warnings om ``tabellen allerede eksisterer``):
@@ -34,13 +36,13 @@ Tips: sjekk manuelt innholdet i derby databasen (for Windows bytt `$DERBY_HOME` 
     select * from department;
 
 
-Container managed persistence
+Container managed transaction
 --------
 `EmployeeEJB` og `DepartmentEJB` er to EJB-er vi jobber med i dette prosjektet. Utforsk domene modellen. Hvilke transaksjonsattributt brukes i disse to EJB-ene? Eksperimenter med forskjellige attributtene.
 Sett attributten til `SUPPORTS` i `EmployeeEJB`. Hva skjer når du forsøker å lagre et `Employee` objekt? Prøv med andre attributtene også.
 
 
-Bean managed persistence
+Bean managed transaction
 --------
 Gjør `EmployeeEJB` og `DepartmentEJB` om til BMT. Hvilke endringer innebærer det? F.eks. kast exception fra en metode der metoden kalles fra en annen bønne.
 
