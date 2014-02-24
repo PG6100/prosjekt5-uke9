@@ -3,7 +3,7 @@ prosjekt5-uke9
 
 Denne øvingen handler om å få litt innsikt i transaksjon api-et til JEE. Importer prosjektet som Maven prosjekt til IDEA (husk Auto-import flagget ved importering, ref oppslag på Its Learning). For gradle, bruk `gradle idea` kommando som genererer `IDEA` filene.
 
-Bruk `F4_Transaksjon` foiler som hjelpemidler.
+Bruk `F4_Transaksjon` foiler som hjelpemiddel.
 
 Fra prosjektets mappe bør man gjøre følgende (set riktig `JAVA_HOME` og `DERBY_HOME`).
 
